@@ -1,5 +1,6 @@
 pulseaudio --start &
-feh --no-fehbg --bg-scale '/home/hristo/Wallpapers/mountain.jpeg' &
+feh --no-fehbg --bg-scale "/home/$USER/Wallpapers/mountain.jpeg" &
+/home/$USER/dwm-bar/dwm_bar.sh &
 exec dwm
 
 xrandr --output HDMI-A-0 --mode 3840x2160 --rate 60.00
