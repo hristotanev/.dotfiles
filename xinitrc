@@ -1,4 +1,4 @@
-pulseaudio -D &
+pulseaudio --start &
 feh --no-fehbg --bg-scale '/home/hristo/Wallpapers/mountain.jpeg' &
 exec dwm
 
