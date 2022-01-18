@@ -1,4 +1,4 @@
-pulseaudio --start &
+pulseaudio --start --daemon &
 feh --no-fehbg --bg-scale "/home/$USER/Wallpapers/mountain.jpeg" &
 /home/$USER/WindowManagers/dwm-bar/dwm_bar.sh &
 exec dwm
