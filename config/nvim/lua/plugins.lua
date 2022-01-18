@@ -18,5 +18,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'dbeniamine/cheat.sh-vim'
 Plug ('neoclide/coc.nvim', {branch = 'release'})
 Plug 'lervag/vimtex'
+Plug 'mfussenegger/nvim-dap'
 
 vim.call('plug#end')
