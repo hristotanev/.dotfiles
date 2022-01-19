@@ -83,12 +83,12 @@ do
     # upperbar="$upperbar$(dwm_currency)"
    
     # Append results of each func one by one to the lowerbar string
-    lowerbar=""
+    # lowerbar=""
 
     
     # xsetroot -name "$upperbar"
     
     # Uncomment the line below to enable the lowerbar 
-    xsetroot -name "$upperbar;$lowerbar"
+    xsetroot -name "$upperbar"
     sleep $((60 - $(date "+%S")))
 done
