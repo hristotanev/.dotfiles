@@ -15,11 +15,10 @@ Plug 'tpope/vim-commentary'
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
-Plug 'dbeniamine/cheat.sh-vim'
 Plug ('neoclide/coc.nvim', {branch = 'release'})
 Plug 'lervag/vimtex'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-treesitter/playground'
--- Plug 'mfussenegger/nvim-dap'
+Plug "elihunter173/dirbuf.nvim"
 
 vim.call('plug#end')
