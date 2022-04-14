@@ -1,2 +1,4 @@
 # .dotfiles
-dotfiles and configs for better life
+
+## Prerequisites
+* [rcm](https://github.com/thoughtbot/rcm)
