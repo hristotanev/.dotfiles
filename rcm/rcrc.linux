@@ -1,3 +1,4 @@
 COPY_ALWAYS="Scripts/* Wallpapers/* WindowManagers/* Terminals/* gitconfig"
 SYMLINK_DIRS="config/*"
 UNDOTTED="Scripts Wallpapers WindowManagers Terminals"
+EXCLUDES="rcm/ install.sh LICENSE README.md"
