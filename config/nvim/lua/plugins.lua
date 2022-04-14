@@ -20,5 +20,7 @@ Plug 'lervag/vimtex'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-treesitter/playground'
 Plug "elihunter173/dirbuf.nvim"
+Plug 'gelguy/wilder.nvim'
+Plug 'roxma/nvim-yarp'
 
 vim.call('plug#end')
