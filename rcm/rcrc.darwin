@@ -1,4 +1,4 @@
-COPY_ALWAYS="Scripts/* gitconfig"
+COPY_ALWAYS="scripts/* gitconfig"
 SYMLINK_DIRS="config/nvim"
-UNDOTTED="Scripts"
-EXCLUDES="rcm/* Wallpapers/* WindowManagers/* Terminals/* xinitrc install.sh README.md LICENSE"
+UNDOTTED="scripts"
+EXCLUDES="rcm/* wallpapers/* windowManagers/* terminals/* xinitrc install.sh README.md LICENSE"
