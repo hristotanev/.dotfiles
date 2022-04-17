@@ -1,4 +1,8 @@
-<h1 align="center">.dotfiles</h1>
+<h1 align="center">
+  .dotfiles
+  
+  🗃️
+</h1>
 <p align="center">a collection of different .dotfiles and other configs</p>
 
 ## Prerequisites
