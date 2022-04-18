@@ -3,7 +3,12 @@
   
   🗃️
 </h1>
-<p align="center">a collection of different .dotfiles and other configs</p>
+<div align="center">
+  a collection of different .dotfiles and other configs
+  
+  ![License](https://img.shields.io/github/license/hristotanev/.dotfiles?color=lightgrey&style=for-the-badge)
+  ![Maintainance](https://img.shields.io/badge/actively%20maintained-yes-success?style=for-the-badge&logo=appveyor)
+</div>
 
 ## Prerequisites
 ### Packages
