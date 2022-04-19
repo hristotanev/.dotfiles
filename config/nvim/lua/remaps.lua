@@ -34,5 +34,3 @@ map('n', '<leader><CR>', ':so ~/.config/nvim/init.lua<CR>', { noremap = true })
 
 map('n', '<leader>ff', "<cmd>lua require 'telescope.builtin'.find_files()<CR>", { noremap = true })
 map('n', '<leader>bf', "<cmd>lua require 'telescope.builtin'.buffers()<CR>", { noremap = true })
-
-map('n', '<leader>dd', ":Dirbuf<CR>", { noremap = true })

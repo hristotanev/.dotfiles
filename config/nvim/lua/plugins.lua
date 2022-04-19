@@ -19,7 +19,6 @@ Plug ('neoclide/coc.nvim', {branch = 'release'})
 Plug 'lervag/vimtex'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-treesitter/playground'
-Plug "elihunter173/dirbuf.nvim"
 Plug 'gelguy/wilder.nvim'
 
 vim.call('plug#end')
