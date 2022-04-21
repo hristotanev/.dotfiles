@@ -15,6 +15,9 @@
 * [rcm](https://github.com/thoughtbot/rcm) - a free and open source dotfile management tool developed by [Thoughtbot](https://thoughtbot.com/)
 
 ## Installation
-1. Clone this repository inside your home directory
-2. Run `cd .dotfiles && ./install.sh`
-3. Voila!
+To link all dotfiles and set up all the configuration necessary simply run the following command in your terminal:
+
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/hristotanev/.dotfiles/main/install.sh)"`
+
+## Remove dotfiles and configuration
+In order to remove all dotfile and configuration run `rcdn` from your home directory.
