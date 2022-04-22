@@ -1,9 +1,14 @@
-local group = vim.api.nvim_create_augroup("GoOrganiseImports", {
+local group = vim.api.nvim_create_augroup("GoGroup", {
   clear = true
 })
 
 vim.api.nvim_create_autocmd({"BufWritePre"}, {
   pattern = {"*.go"},
-  command = ":silent call CocAction('runCommand', 'editor.action.organizeImport')",
+  callback = function ()
+    vim.cmd([[
+      :GoFmt
+      :GoImports
+    ]])
+  end,
   group = group
 })
