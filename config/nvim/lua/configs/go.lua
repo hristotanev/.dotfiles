@@ -6,8 +6,8 @@ vim.api.nvim_create_autocmd({"BufWritePre"}, {
   pattern = {"*.go"},
   callback = function ()
     vim.cmd([[
-      :GoFmt
-      :GoImports
+      :silent GoFmt
+      :silent GoImports
     ]])
   end,
   group = group
