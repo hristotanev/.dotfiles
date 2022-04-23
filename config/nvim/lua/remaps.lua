@@ -35,5 +35,5 @@ map('n', '<leader><CR>', ':so ~/.config/nvim/init.lua<CR>', { noremap = true })
 map('n', '<leader>ff', "<cmd>lua require 'telescope.builtin'.find_files()<CR>", { noremap = true })
 map('n', '<leader>bf', "<cmd>lua require 'telescope.builtin'.buffers()<CR>", { noremap = true })
 
-map('n', '<leader>gi', ':GoInstallBinaries', { noremap = true })
-map('n', '<leader>gu', ':GoUpdateBinaries', { noremap = true })
+map('n', '<leader>gi', ':GoInstallBinaries<CR>', { noremap = true })
+map('n', '<leader>gu', ':GoUpdateBinaries<CR>', { noremap = true })
