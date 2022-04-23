@@ -5,6 +5,7 @@ fi
 export TERM="xterm-256color"
 export ZSH=~/.oh-my-zsh
 export FZF_BASE=/usr/bin/fzf
+export PATH=$PATH:$(go env GOPATH)/bin/
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
