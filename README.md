@@ -22,4 +22,4 @@ To link all dotfiles and set up all the configuration necessary simply run the f
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/hristotanev/.dotfiles/main/install.sh)"`
 
 ## Remove dotfiles and other configuration
-In order to remove all dotfiles and configurations, run `rcdn` from your home directory.
+In order to remove all dotfiles and configurations, run `rcdn && rm -rf .dotfiles` from your home directory.
