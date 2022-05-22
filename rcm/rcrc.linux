@@ -1,4 +1,4 @@
 COPY_ALWAYS="scripts/* dwm-bar/* gitconfig"
 SYMLINK_DIRS="config/*"
 UNDOTTED="scripts dwm-bar"
-EXCLUDES="rcm/ install.sh LICENSE README.md"
+EXCLUDES="rcm/ install.sh LICENSE README.md PKGBUILD"
