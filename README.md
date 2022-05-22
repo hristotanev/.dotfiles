@@ -17,6 +17,12 @@
 Remember to back-up all the configuration you already have before running the installer.
 
 ## Installation
+### Arch-based distros
+For any Arch-based distros you can install everything in this project from the arch repository using your favourite AUR helper (in my case this is [paru](https://github.com/morganamilo/paru)), by simply running:
+
+`paru -Syu dotfiles-hristotanev-git`
+
+### Other distros
 To link all dotfiles and set up all the configuration necessary simply run the following command in your terminal:
 
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/hristotanev/.dotfiles/main/install.sh)"`
