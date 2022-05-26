@@ -1,4 +1,4 @@
 COPY_ALWAYS="scripts/* gitconfig"
 SYMLINK_DIRS="config/*"
 UNDOTTED="scripts"
-EXCLUDES="rcm/ install.sh LICENSE README.md PKGBUILD"
+EXCLUDES="rcm/ install.sh LICENSE README.md"
