@@ -1,4 +1,3 @@
-COPY_ALWAYS="scripts/* gitconfig"
-SYMLINK_DIRS="config/nvim config/alacritty"
-UNDOTTED="scripts"
+COPY_ALWAYS="gitconfig"
+SYMLINK_DIRS="config/nvim config/alacritty config/scripts"
 EXCLUDES="rcm/* config/dwm-bar/* xinitrc install.sh README.md LICENSE"

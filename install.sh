@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [[! -e $HOME/.dotfiles ]]; then
-  git clone https://github.com/hristotanev/.dotfiles.git $HOME
+if [[ ! -e $HOME/.dotfiles ]]; then
+  git clone https://github.com/hristotanev/.dotfiles.git $HOME/.dotfiles
 fi
 
 os=$(uname | awk '{ print tolower($0) }')
