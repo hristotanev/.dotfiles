@@ -1,5 +1,8 @@
-if [ "$(tty)" = /dev/tty1 ]; then
-	exec startx
+os=$(uname | awk '{ print tolower($0) }')
+if [[ $os == 'linux' ]]; then
+  if [ "$(tty)" = /dev/tty1 ]; then
+    exec startx
+  fi
 fi
 
 export TERM="xterm-256color"

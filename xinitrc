@@ -1,5 +1,5 @@
 pulseaudio --start --daemon &
-/home/$USER/dwm-bar/dwm_bar.sh &
+$HOME/.config/dwm-bar/dwm_bar.sh &
 exec dwm
 
 xrandr --output HDMI-A-0 --mode 3840x2160 --rate 60.00
