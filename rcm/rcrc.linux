@@ -1,3 +1,4 @@
 COPY_ALWAYS="gitconfig"
 SYMLINK_DIRS="config/*"
+UNDOTTED="rcm"
 EXCLUDES="rcm/* install.sh LICENSE README.md"
