@@ -37,3 +37,5 @@ map('n', '<leader>bf', "<cmd>lua require 'telescope.builtin'.buffers()<CR>", { n
 
 map('n', '<leader>gi', ':GoInstallBinaries<CR>', { noremap = true })
 map('n', '<leader>gu', ':GoUpdateBinaries<CR>', { noremap = true })
+
+map('n', '<leader>mm', "<cmd>lua require 'memento'.toggle()<CR>", { noremap = true })

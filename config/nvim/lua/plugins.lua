@@ -20,6 +20,7 @@ Plug 'lervag/vimtex'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-treesitter/playground'
 Plug 'gelguy/wilder.nvim'
+Plug 'gaborvecsei/memento.nvim'
 Plug ('darrikonn/vim-gofmt', { ['do'] = ':GoUpdateBinaries' })
 
 vim.call('plug#end')
