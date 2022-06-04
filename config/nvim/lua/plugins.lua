@@ -35,6 +35,10 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 
+-- Debugging
+Plug 'mfussenegger/nvim-dap'
+Plug 'leoluz/nvim-dap-go'
+
 -- Misc
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-commentary'
