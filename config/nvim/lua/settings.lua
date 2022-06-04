@@ -18,3 +18,4 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.o.termguicolors = true
+vim.opt.completeopt = 'menu,menuone,noselect'
