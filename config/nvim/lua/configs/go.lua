@@ -1,3 +1,5 @@
+require('lspconfig').gopls.setup{}
+
 local group = vim.api.nvim_create_augroup("GoGroup", {
   clear = true
 })
