@@ -18,6 +18,8 @@ plugins=(
 	fzf 
 	zsh-syntax-highlighting 
 	zsh-autosuggestions 
+  archlinux
+  magic-enter
 )
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
