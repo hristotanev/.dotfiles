@@ -1,9 +1,22 @@
+-- Set-up lsp
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
+require('lspconfig').gopls.setup {
+  on_attach = function()
+    vim.keymap.set("n", "P", vim.lsp.buf.hover, { buffer = 0 })
+  end,
+  capabilities = capabilities,
+}
+
 -- Set-up go debugger
 require('dap-go').setup()
+vim.keymap.set('n', '<C-b>', "<cmd>lua require 'dap'.toggle_breakpoint()<CR>", { noremap = true })
+vim.keymap.set('n', '<C-j>', "<cmd>lua require 'dap'.step_over()<CR>", { noremap = true })
+vim.keymap.set('n', '<C-r>', "<cmd>lua require 'dap'.repl.open()<CR>", { noremap = true })
+vim.keymap.set('n', '<C-s>', "<cmd>lua require 'dap'.continue()<CR>", { noremap = true })
 
--- Set-up lsp
-require('lspconfig').gopls.setup{}
-
+-- Set-up autocmd on save
 local group = vim.api.nvim_create_augroup("GoGroup", {
   clear = true
 })
