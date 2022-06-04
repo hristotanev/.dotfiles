@@ -23,3 +23,8 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 require('lspconfig')['gopls'].setup {
   capabilities = capabilities
 }
+
+require('lspconfig')['ltex'].setup {
+  capabilities = capabilities
+}
+
