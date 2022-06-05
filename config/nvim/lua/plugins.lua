@@ -48,4 +48,6 @@ Plug 'tpope/vim-surround'
 Plug 'gelguy/wilder.nvim'
 Plug 'gaborvecsei/memento.nvim'
 
+Plug 'ThePrimeagen/vim-be-good'
+
 vim.call('plug#end')

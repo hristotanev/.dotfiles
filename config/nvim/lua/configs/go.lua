@@ -27,6 +27,7 @@ vim.api.nvim_create_autocmd({"BufWritePre"}, {
     vim.cmd([[
       :silent GoFmt
       :silent GoImports
+      :silent LspRestart
     ]])
   end,
   group = group
