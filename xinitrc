@@ -1,4 +1,4 @@
-pulseaudio --start --daemon &
+start-pulseaudio-x11 &
 $HOME/.config/dwm-bar/dwm_bar.sh &
 exec dwm
 

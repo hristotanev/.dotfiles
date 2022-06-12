@@ -5,6 +5,9 @@ capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 require('lspconfig').gopls.setup {
   on_attach = function()
     vim.keymap.set("n", "P", vim.lsp.buf.hover, { buffer = 0 })
+    vim.keymap.set("n", "<leader>dj", vim.diagnostic.goto_prev, { buffer = 0 })
+    vim.keymap.set("n", "<leader>dk", vim.diagnostic.goto_next, { buffer = 0 })
+    vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { buffer = 0 })
   end,
   capabilities = capabilities,
 }
