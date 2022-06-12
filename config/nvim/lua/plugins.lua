@@ -3,8 +3,6 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin', '~/.nvim/plugged')
 
 -- Theme
-Plug 'ryanoasis/vim-devicons'
-Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mhinz/vim-startify'
 Plug 'mhartington/oceanic-next'
 Plug ('glepnir/galaxyline.nvim' , {branch = 'main'})
@@ -49,5 +47,9 @@ Plug 'gelguy/wilder.nvim'
 Plug 'gaborvecsei/memento.nvim'
 
 Plug 'ThePrimeagen/vim-be-good'
+
+-- Devicons
+Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 
 vim.call('plug#end')

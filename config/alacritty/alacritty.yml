@@ -100,19 +100,19 @@ scrolling:
 
 font:
   normal:
-    family: DejaVu Sans Mono
+    family: Fira Code Nerd Font
     style: Regular
 
-  # bold:
-  #   family: DejaVu Sans Mono Bold
-  #   style: Bold
+  bold:
+    family: Fira Code Nerd Font
+    style: Bold
 
   italic:
-    family: DejaVu Sans Mono
+    family: Fira Code Nerd Font
     style: Italic
 
   bold_italic:
-    family: DejaVu Sans Mono
+    family: Fira Code Nerd Font
     style: Bold Italic
 
   size: 9.0
