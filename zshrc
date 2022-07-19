@@ -23,7 +23,10 @@ plugins=(
 )
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-pfetch
+
+[[ $(printenv | grep -o -w "TERMINAL_EMULATOR") == '' ]] && pfetch
 
 source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+alias pd='~/scripts/dmenu_pass.sh'
