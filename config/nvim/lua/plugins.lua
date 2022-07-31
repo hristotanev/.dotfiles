@@ -45,7 +45,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'gelguy/wilder.nvim'
 Plug 'gaborvecsei/memento.nvim'
-Plug 'williamboman/mason.nvim'
 
 Plug 'ThePrimeagen/vim-be-good'
 
