@@ -1,7 +1,7 @@
 -- NeoVim setup
-require 'plugins'
 require 'settings'
 require 'remaps'
+require 'plugins'
 
 -- Custom plugin config
 require 'configs.nvim.statusline'

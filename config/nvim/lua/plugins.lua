@@ -1,55 +1,51 @@
-local Plug = vim.fn['plug#']
+local fn = vim.fn
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+if fn.empty(fn.glob(install_path)) > 0 then
+  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+  vim.cmd [[packadd packer.nvim]]
+end
 
-vim.call('plug#begin', '~/.nvim/plugged')
+return require('packer').startup(function (use)
+  if packer_bootstrap then
+    require('packer').sync()
+  end
 
--- Theme
-Plug 'mhinz/vim-startify'
-Plug 'mhartington/oceanic-next'
-Plug ('glepnir/galaxyline.nvim' , {branch = 'main'})
-
--- Better fuzzy search
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-
--- Parser generation for NeoVim
-Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'nvim-treesitter/playground'
-
--- Language specific
-Plug 'lervag/vimtex'
-Plug ('darrikonn/vim-gofmt', { ['do'] = ':GoUpdateBinaries' })
-
--- LSP
-Plug 'neovim/nvim-lspconfig'
-
--- Auto completion
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'hrsh7th/nvim-cmp'
-
--- Snippets
-Plug 'L3MON4D3/LuaSnip'
-Plug 'saadparwaiz1/cmp_luasnip'
-
--- Debugging
-Plug 'mfussenegger/nvim-dap'
-Plug 'leoluz/nvim-dap-go'
-
--- Misc
-Plug 'mbbill/undotree'
-Plug 'tpope/vim-commentary'
-Plug 'preservim/nerdtree'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'gelguy/wilder.nvim'
-Plug 'gaborvecsei/memento.nvim'
-
-Plug 'ThePrimeagen/vim-be-good'
-
--- Devicons
-Plug 'ryanoasis/vim-devicons'
-Plug 'kyazdani42/nvim-web-devicons'
-
-vim.call('plug#end')
+  use('mhinz/vim-startify')
+  use('mhartington/oceanic-next')
+  use('glepnir/galaxyline.nvim' , {branch = 'main'})
+  -- Better fuzzy search)
+  use('nvim-lua/plenary.nvim')
+  use('nvim-telescope/telescope.nvim')
+  -- Parser generation for NeoVim)
+  use('nvim-treesitter/nvim-treesitter')
+  use('nvim-treesitter/playground')
+  -- Language specific)
+  use('lervag/vimtex')
+  use('darrikonn/vim-gofmt', { run = ':GoUpdateBinaries' })
+  -- LSP)
+  use('neovim/nvim-lspconfig')
+  -- Auto completion)
+  use('hrsh7th/cmp-nvim-lsp')
+  use('hrsh7th/cmp-buffer')
+  use('hrsh7th/cmp-path')
+  use('hrsh7th/cmp-cmdline')
+  use('hrsh7th/nvim-cmp')
+  -- Snippets)
+  use('L3MON4D3/LuaSnip')
+  use('saadparwaiz1/cmp_luasnip')
+  -- Debugging)
+  use('mfussenegger/nvim-dap')
+  use('leoluz/nvim-dap-go')
+  -- Misc)
+  use('mbbill/undotree')
+  use('tpope/vim-commentary')
+  use('preservim/nerdtree')
+  use('tpope/vim-fugitive')
+  use('tpope/vim-surround')
+  use('gelguy/wilder.nvim')
+  use('gaborvecsei/memento.nvim')
+  use('ThePrimeagen/vim-be-good')
+  -- Devicons)
+  use('ryanoasis/vim-devicons')
+  use('kyazdani42/nvim-web-devicons')
+end)
