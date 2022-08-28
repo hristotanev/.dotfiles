@@ -1,11 +1,12 @@
-local nnoremap = require('keymaps').nnoremap
+local unmap = require('hristotanev.keymaps').unmap
+local nnoremap = require('hristotanev.keymaps').nnoremap
 
 vim.g.mapleader = ' '
 
-vim.keymap.set('', '<Up>', '<Nop>', {})
-vim.keymap.set('', '<Down>', '<Nop>', {})
-vim.keymap.set('', '<Right>', '<Nop>', {})
-vim.keymap.set('', '<Left>', '<Nop>', {})
+unmap('<Up>', '<Nop>', {})
+unmap('<Down>', '<Nop>', {})
+unmap('<Right>', '<Nop>', {})
+unmap('<Left>', '<Nop>', {})
 nnoremap('pi', ':PackerInstall<CR>', { noremap=true, silent=true })
 nnoremap('pc', ':PackerClean<CR>', { noremap=true, silent=true })
 nnoremap('pu', ':PackerUpdate<CR>', { noremap = true, silent = true })
