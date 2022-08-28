@@ -149,6 +149,11 @@ _G.packer_plugins = {
     path = "/home/hristo/.local/share/nvim/site/pack/packer/start/oceanic-next",
     url = "https://github.com/mhartington/oceanic-next"
   },
+  ["packer.nvim"] = {
+    loaded = true,
+    path = "/home/hristo/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
+  },
   playground = {
     loaded = true,
     path = "/home/hristo/.local/share/nvim/site/pack/packer/start/playground",
@@ -158,6 +163,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hristo/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["startup.nvim"] = {
+    config = { "\27LJ\2\nL\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\ntheme\14dashboard\nsetup\fstartup\frequire\0" },
+    loaded = true,
+    path = "/home/hristo/.local/share/nvim/site/pack/packer/start/startup.nvim",
+    url = "https://github.com/startup-nvim/startup.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -179,11 +190,6 @@ _G.packer_plugins = {
     path = "/home/hristo/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
   },
-  ["vim-devicons"] = {
-    loaded = true,
-    path = "/home/hristo/.local/share/nvim/site/pack/packer/start/vim-devicons",
-    url = "https://github.com/ryanoasis/vim-devicons"
-  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/hristo/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -193,11 +199,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hristo/.local/share/nvim/site/pack/packer/start/vim-gofmt",
     url = "https://github.com/darrikonn/vim-gofmt"
-  },
-  ["vim-startify"] = {
-    loaded = true,
-    path = "/home/hristo/.local/share/nvim/site/pack/packer/start/vim-startify",
-    url = "https://github.com/mhinz/vim-startify"
   },
   ["vim-surround"] = {
     loaded = true,
@@ -217,6 +218,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: startup.nvim
+time([[Config for startup.nvim]], true)
+try_loadstring("\27LJ\2\nL\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\ntheme\14dashboard\nsetup\fstartup\frequire\0", "config", "startup.nvim")
+time([[Config for startup.nvim]], false)
 if should_profile then save_profiles() end
 
 end)

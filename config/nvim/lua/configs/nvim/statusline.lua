@@ -14,14 +14,25 @@ section.left[2] = {
   ViMode = {
     provider = function()
       local mode_color = {
-        n = colors.red, i = colors.green,v=colors.blue,
-        [''] = colors.blue,V=colors.blue,
-        c = colors.magenta,no = colors.red,s = colors.orange,
-        S=colors.orange,[''] = colors.orange,
-        ic = colors.yellow,R = colors.violet,Rv = colors.violet,
-        cv = colors.red,ce=colors.red, r = colors.cyan,
-        rm = colors.cyan, ['r?'] = colors.cyan,
-        ['!']  = colors.red,t = colors.red
+        n = colors.red,
+        i = colors.green,
+        v=colors.blue,
+        [''] = colors.blue,
+        V=colors.blue,
+        c = colors.magenta,
+        no = colors.red,
+        s = colors.orange,
+        S=colors.orange,
+        ic = colors.yellow,
+        R = colors.violet,
+        Rv = colors.violet,
+        cv = colors.red,
+        ce=colors.red,
+        r = colors.cyan,
+        rm = colors.cyan,
+        ['r?'] = colors.cyan,
+        ['!']  = colors.red,
+        t = colors.red
       }
 
       vim.api.nvim_command('hi GalaxyViMode guifg=' .. mode_color[vim.fn.mode()])
