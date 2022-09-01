@@ -16,6 +16,8 @@ return require('packer').startup(function (use)
     end
   }
 
+  use('editorconfig/editorconfig-vim')
+
   use('mhartington/oceanic-next')
   use('glepnir/galaxyline.nvim' , { branch = 'main' })
 
