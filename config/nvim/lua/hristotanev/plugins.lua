@@ -16,14 +16,13 @@ return require('packer').startup(function (use)
     end
   }
 
-  use('editorconfig/editorconfig-vim')
-
   use('mhartington/oceanic-next')
   use('glepnir/galaxyline.nvim' , { branch = 'main' })
 
   -- Better fuzzy search)
   use('nvim-lua/plenary.nvim')
   use('nvim-telescope/telescope.nvim')
+  use { "nvim-telescope/telescope-file-browser.nvim" }
 
   -- Parser generation for NeoVim)
   use('nvim-treesitter/nvim-treesitter')
@@ -60,6 +59,21 @@ return require('packer').startup(function (use)
   use('gelguy/wilder.nvim')
   use('gaborvecsei/memento.nvim')
   use('ThePrimeagen/vim-be-good')
+  use('editorconfig/editorconfig-vim')
+
+  use {
+    "folke/twilight.nvim",
+    config = function()
+      require("twilight").setup {}
+    end
+  }
+
+  use {
+    "folke/zen-mode.nvim",
+    config = function()
+      require("zen-mode").setup {}
+    end
+  }
 
   -- Devicons)
   use('kyazdani42/nvim-web-devicons')
