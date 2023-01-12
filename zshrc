@@ -29,4 +29,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias pd='~/scripts/dmenu_pass.sh'
+alias pd='~/.config/scripts/dmenu_pass.sh'
+alias co='~/.config/scripts/cpp/co.sh'
+alias rn='~/.config/scripts/cpp/rn.sh'
