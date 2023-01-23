@@ -32,3 +32,6 @@ source $ZSH/oh-my-zsh.sh
 alias pd='~/.config/scripts/dmenu_pass.sh'
 alias co='~/.config/scripts/cpp/co.sh'
 alias rn='~/.config/scripts/cpp/rn.sh'
+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
