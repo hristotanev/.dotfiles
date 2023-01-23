@@ -1,0 +1,13 @@
+{
+	"init": {
+		"prefix": "init",
+		"body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;\n",
+      "int main() {",
+      "\tios_base::sync_with_stdio(false);",
+      "\tcin.tie(0);\n",
+      "\treturn 0;\n}"
+		]
+	}
+}

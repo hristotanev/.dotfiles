@@ -43,7 +43,7 @@ return require('packer').startup(function (use)
   use('hrsh7th/nvim-cmp')
 
   -- Snippets)
-  use('L3MON4D3/LuaSnip')
+  use('L3MON4D3/LuaSnip', {tag = 'v<CurrentMajor>.*', run = 'make install_jsregexp'})
   use('saadparwaiz1/cmp_luasnip')
 
   -- Debugging)
