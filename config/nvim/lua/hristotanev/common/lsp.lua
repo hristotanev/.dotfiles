@@ -6,7 +6,7 @@ local function capabilities()
 end
 
 local function on_attach()
-  local nnoremap = require('hristotanev.keymaps').nnoremap
+  local nnoremap = require('hristotanev.common.keymaps').nnoremap
 
   return function()
     nnoremap("P", vim.lsp.buf.hover, { buffer = 0 })

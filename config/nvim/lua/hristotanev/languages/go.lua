@@ -1,11 +1,5 @@
 local api = vim.api
-local lsp = require('hristotanev.languages.lsp')
-local nnoremap = require('hristotanev.keymaps').nnoremap
-
-require('lspconfig').gopls.setup({
-  capabilities = lsp.capabilities,
-  on_attach = lsp.on_attach,
-})
+local nnoremap = require('hristotanev.common.keymaps').nnoremap
 
 -- Set-up go debugger
 require('dap-go').setup()

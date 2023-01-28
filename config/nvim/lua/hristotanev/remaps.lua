@@ -1,6 +1,6 @@
-local unmap = require('hristotanev.keymaps').unmap
-local nnoremap = require('hristotanev.keymaps').nnoremap
-local inoremap = require('hristotanev.keymaps').inoremap
+local unmap = require('hristotanev.common.keymaps').unmap
+local nnoremap = require('hristotanev.common.keymaps').nnoremap
+local inoremap = require('hristotanev.common.keymaps').inoremap
 
 vim.g.mapleader = ' '
 

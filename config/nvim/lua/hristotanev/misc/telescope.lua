@@ -1,4 +1,4 @@
-local nnoremap = require('hristotanev.keymaps').nnoremap
+local nnoremap = require('hristotanev.common.keymaps').nnoremap
 
 require('telescope').setup({
   defaults = {
