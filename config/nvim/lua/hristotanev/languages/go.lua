@@ -1,18 +1,11 @@
 local api = vim.api
+local lsp = require('hristotanev.languages.lsp')
 local nnoremap = require('hristotanev.keymaps').nnoremap
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
-
-require('lspconfig').gopls.setup {
-  on_attach = function()
-    nnoremap("P", vim.lsp.buf.hover, { buffer = 0 })
-    nnoremap("<leader>dj", vim.diagnostic.goto_prev, { buffer = 0 })
-    nnoremap("<leader>dk", vim.diagnostic.goto_next, { buffer = 0 })
-    nnoremap("<leader>r", vim.lsp.buf.rename, { buffer = 0 })
-  end,
-  capabilities = capabilities,
-}
+require('lspconfig').gopls.setup({
+  capabilities = lsp.capabilities,
+  on_attach = lsp.on_attach,
+})
 
 -- Set-up go debugger
 require('dap-go').setup()

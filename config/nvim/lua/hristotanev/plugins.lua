@@ -7,50 +7,27 @@ end
 
 return require('packer').startup(function (use)
   use('wbthomason/packer.nvim')
-
-  use {
-    "startup-nvim/startup.nvim",
-    requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
-    config = function()
-      require"startup".setup({ theme = "dashboard" })
-    end
-  }
-
+  use('startup-nvim/startup.nvim')
   use('mhartington/oceanic-next')
   use('glepnir/galaxyline.nvim' , { branch = 'main' })
 
-  -- Better fuzzy search)
-  use('nvim-lua/plenary.nvim')
-  use('nvim-telescope/telescope.nvim')
-  use { "nvim-telescope/telescope-file-browser.nvim" }
-
-  -- Parser generation for NeoVim)
-  use('nvim-treesitter/nvim-treesitter')
-  use('nvim-treesitter/playground')
-
-  -- Language specific)
+  -- Language specific
   use('lervag/vimtex')
   use('darrikonn/vim-gofmt', { run = ':GoUpdateBinaries' })
-
-  -- LSP)
+  use('L3MON4D3/LuaSnip', {tag = 'v<CurrentMajor>.*', run = 'make install_jsregexp'})
+  use('saadparwaiz1/cmp_luasnip')
+  use('mfussenegger/nvim-dap')
+  use('leoluz/nvim-dap-go')
   use('neovim/nvim-lspconfig')
-
-  -- Auto completion)
   use('hrsh7th/cmp-nvim-lsp')
   use('hrsh7th/cmp-buffer')
   use('hrsh7th/cmp-path')
   use('hrsh7th/cmp-cmdline')
   use('hrsh7th/nvim-cmp')
+  use('nvim-treesitter/nvim-treesitter')
 
-  -- Snippets)
-  use('L3MON4D3/LuaSnip', {tag = 'v<CurrentMajor>.*', run = 'make install_jsregexp'})
-  use('saadparwaiz1/cmp_luasnip')
-
-  -- Debugging)
-  use('mfussenegger/nvim-dap')
-  use('leoluz/nvim-dap-go')
-
-  -- Misc)
+  -- Misc
+  use('vimwiki/vimwiki')
   use('mbbill/undotree')
   use('tpope/vim-commentary')
   use('preservim/nerdtree')
@@ -60,21 +37,11 @@ return require('packer').startup(function (use)
   use('gaborvecsei/memento.nvim')
   use('ThePrimeagen/vim-be-good')
   use('editorconfig/editorconfig-vim')
-
-  use {
-    "folke/twilight.nvim",
-    config = function()
-      require("twilight").setup {}
-    end
-  }
-
-  use {
-    "folke/zen-mode.nvim",
-    config = function()
-      require("zen-mode").setup {}
-    end
-  }
-
-  -- Devicons)
+  use('folke/twilight.nvim')
+  use('folke/zen-mode.nvim')
+  use('nvim-lua/plenary.nvim')
+  use('nvim-telescope/telescope.nvim')
+  use('nvim-telescope/telescope-file-browser.nvim')
+  use('nvim-treesitter/playground')
   use('kyazdani42/nvim-web-devicons')
 end)

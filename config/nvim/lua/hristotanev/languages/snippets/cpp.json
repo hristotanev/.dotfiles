@@ -3,6 +3,7 @@
 		"prefix": "init",
 		"body": [
       "#include <bits/stdc++.h>",
+      "#define ll long long",
       "using namespace std;\n",
       "int main() {",
       "\tios_base::sync_with_stdio(false);",

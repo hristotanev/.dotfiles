@@ -1,6 +1,6 @@
 local nnoremap = require('hristotanev.keymaps').nnoremap
 
-require 'telescope'.setup({
+require('telescope').setup({
   defaults = {
     prompt_prefix = ' '
   },
@@ -12,7 +12,6 @@ require 'telescope'.setup({
   }
 })
 
-require("telescope").load_extension("file_browser")
-
+require('telescope').load_extension('file_browser')
 nnoremap('<leader>ff', "<cmd>lua require 'telescope.builtin'.find_files()<CR>")
 nnoremap('<leader>bf', "<cmd>lua require 'telescope.builtin'.buffers()<CR>")
