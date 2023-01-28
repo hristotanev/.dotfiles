@@ -29,6 +29,7 @@ return require('packer').startup(function (use)
   use('nvim-treesitter/nvim-treesitter')
 
   -- Misc
+  use('fedepujol/move.nvim')
   use('vimwiki/vimwiki')
   use('mbbill/undotree')
   use('tpope/vim-commentary')
