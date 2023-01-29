@@ -1,6 +1,8 @@
 vim.cmd('syntax on')
 vim.cmd('filetype plugin indent on')
 vim.cmd('colorscheme OceanicNext')
+vim.cmd('highlight WinSeparator guibg=None')
+vim.o.laststatus = 3
 vim.bo.tw = 120
 vim.wo.cursorline = true
 vim.wo.wrap = false
