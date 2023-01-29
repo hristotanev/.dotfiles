@@ -1,7 +1,9 @@
-vim.cmd('syntax on')
-vim.cmd('filetype plugin indent on')
-vim.cmd('colorscheme OceanicNext')
-vim.cmd('highlight WinSeparator guibg=None')
+vim.cmd[[
+  syntax on
+  filetype plugin indent on 
+  colorscheme OceanicNext
+  highlight WinSeparator guibg=None
+]]
 vim.o.laststatus = 3
 vim.bo.tw = 120
 vim.wo.cursorline = true

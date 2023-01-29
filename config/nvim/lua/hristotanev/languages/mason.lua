@@ -9,7 +9,9 @@ mason_lsp.setup({
     'gopls',
     'tsserver',
     'svelte',
-    'ltex'
+    'ltex',
+    'vimls',
+    'luau_lsp'
   },
   automatic_installation = true
 })

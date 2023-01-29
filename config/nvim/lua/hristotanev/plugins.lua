@@ -26,22 +26,34 @@ return require('packer').startup(function (use)
   use('hrsh7th/cmp-path')
   use('hrsh7th/cmp-cmdline')
   use('hrsh7th/nvim-cmp')
-  use('nvim-treesitter/nvim-treesitter')
+  use({
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  })
 
   -- Misc
   use('fedepujol/move.nvim')
   use('vimwiki/vimwiki')
   use('mbbill/undotree')
   use('tpope/vim-commentary')
-  use('preservim/nerdtree')
   use('tpope/vim-fugitive')
   use('tpope/vim-surround')
   use('gelguy/wilder.nvim')
   use('gaborvecsei/memento.nvim')
   use('ThePrimeagen/vim-be-good')
   use('editorconfig/editorconfig-vim')
-  use('folke/twilight.nvim')
-  use('folke/zen-mode.nvim')
+  use({
+    'folke/twilight.nvim',
+    config = function()
+      require("twilight").setup({})
+    end
+  })
+  use({
+    'folke/zen-mode.nvim',
+    config = function()
+      require('zen-mode').setup({})
+    end
+  })
   use('nvim-lua/plenary.nvim')
   use('nvim-telescope/telescope.nvim')
   use('nvim-telescope/telescope-file-browser.nvim')

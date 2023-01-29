@@ -1,7 +1,5 @@
 require('hristotanev.misc.telescope')
 require('hristotanev.misc.wilder')
 require('hristotanev.misc.treesitter')
-require('hristotanev.misc.twilight')
-require('hristotanev.misc.zenmode')
 require('hristotanev.misc.move')
 require('hristotanev.misc.nvim-tree')
