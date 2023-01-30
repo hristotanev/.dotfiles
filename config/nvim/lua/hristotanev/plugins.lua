@@ -1,13 +1,18 @@
 local fn = vim.fn
 local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
-  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+  local packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
   vim.cmd('packadd packer.nvim')
 end
 
 return require('packer').startup(function (use)
   use('wbthomason/packer.nvim')
-  use('startup-nvim/startup.nvim')
+  use({
+    'startup-nvim/startup.nvim',
+    config = function ()
+      require('startup').setup({ theme = "dashboard" })
+    end
+  })
   use('mhartington/oceanic-next')
   use('glepnir/galaxyline.nvim' , { branch = 'main' })
 
@@ -39,7 +44,6 @@ return require('packer').startup(function (use)
   use('tpope/vim-fugitive')
   use('tpope/vim-surround')
   use('gelguy/wilder.nvim')
-  use('gaborvecsei/memento.nvim')
   use('ThePrimeagen/vim-be-good')
   use('editorconfig/editorconfig-vim')
   use({

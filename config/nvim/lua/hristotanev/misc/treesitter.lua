@@ -6,7 +6,9 @@ require('nvim-treesitter.configs').setup({
     'vim',
     'lua',
     'latex',
-    'typescript'
+    'typescript',
+    'html',
+    'css'
   },
   auto_install = true,
   highlight = {

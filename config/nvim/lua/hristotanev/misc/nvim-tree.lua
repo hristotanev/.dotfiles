@@ -1,3 +1,5 @@
+local nnoremap = require('hristotanev.common.keymaps').nnoremap
+
 require('nvim-tree').setup({})
 
 local api = vim.api
@@ -23,3 +25,5 @@ vim.api.nvim_create_autocmd({ "VimEnter" }, {
   callback = open_tree_for_dir,
   group = group
 })
+
+nnoremap('<leader>t', ':NvimTreeToggle<CR>', { noremap = true })

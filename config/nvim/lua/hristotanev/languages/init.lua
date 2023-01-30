@@ -1,5 +1,5 @@
 require('hristotanev.languages.mason')
 require('hristotanev.languages.cmp')
-require('hristotanev.languages.luasnip')
+require('hristotanev.languages.luasnippets')
 require('hristotanev.languages.go')
 require('hristotanev.languages.vimtex')

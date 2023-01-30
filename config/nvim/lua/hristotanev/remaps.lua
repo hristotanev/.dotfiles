@@ -18,8 +18,5 @@ nnoremap('<leader>l', ':wincmd l<CR>', { noremap = true })
 nnoremap('<leader>k', ':wincmd k<CR>', { noremap = true })
 nnoremap('<leader>j', ':wincmd j<CR>', { noremap = true })
 nnoremap('<leader>u', ':UndotreeToggle<CR>', { noremap = true })
-nnoremap('<leader>d', ':NvimTreeToggle<CR>', { noremap = true })
 nnoremap('<leader>rr', ':so %<CR>', { noremap = true })
 nnoremap('<leader><CR>', ':so ~/.config/nvim/init.lua<CR>', { noremap = true })
-nnoremap('<leader>mm', "<cmd>lua require 'memento'.toggle()<CR>", { noremap = true })
-
