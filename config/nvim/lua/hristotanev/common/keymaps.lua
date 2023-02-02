@@ -1,7 +1,7 @@
 local M = {}
 
 local function bind(op, outer_opts)
-  outer_opts = outer_opts or {noremap = true}
+  outer_opts = outer_opts or { noremap = true }
 
   return function(lhs, rhs, opts)
     opts = vim.tbl_extend("force",
@@ -14,8 +14,8 @@ local function bind(op, outer_opts)
 end
 
 M.unmap = bind("")
-M.nmap = bind("n", {noremap = false})
 M.nnoremap = bind("n")
+M.cnoremap = bind("c")
 M.vnoremap = bind("v")
 M.xnoremap = bind("x")
 M.inoremap = bind("i")

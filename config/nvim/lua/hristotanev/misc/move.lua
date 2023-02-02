@@ -1,4 +1,4 @@
-local opts = { noremap = true, silent = true }
+local opts = { silent = true }
 local nnoremap = require('hristotanev.common.keymaps').nnoremap
 local vnoremap = require('hristotanev.common.keymaps').vnoremap
 

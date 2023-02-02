@@ -1,10 +1,8 @@
 local unmap = require('hristotanev.common.keymaps').unmap
 local nnoremap = require('hristotanev.common.keymaps').nnoremap
-local inoremap = require('hristotanev.common.keymaps').inoremap
 
 vim.g.mapleader = ' '
 
-inoremap('qq', '<Esc>', { noremap = true })
 unmap('<Esc>', '<Nop>', {})
 unmap('<Up>', '<Nop>', {})
 unmap('<Down>', '<Nop>', {})
