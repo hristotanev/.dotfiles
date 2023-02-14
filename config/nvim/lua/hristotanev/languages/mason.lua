@@ -11,7 +11,7 @@ mason_lsp.setup({
     'svelte',
     'ltex',
     'vimls',
-    'sumneko_lua',
+    'lua_ls',
     'html',
     'cssls'
   },
@@ -25,8 +25,8 @@ mason_lsp.setup_handlers({
       on_attach = lsp.on_attach
     })
   end,
-  ['sumneko_lua'] = function ()
-    require('lspconfig').sumneko_lua.setup({
+  ['lua_ls'] = function ()
+    require('lspconfig').lua_ls.setup({
       capabilities = lsp.capabilities,
       on_attach = lsp.on_attach,
       settings = {
