@@ -1,4 +1,4 @@
 COPY_ALWAYS="gitconfig"
 SYMLINK_DIRS="config/nvim config/alacritty config/scripts"
 UNDOTTED="rcm"
-EXCLUDES="rcm/* config/dwm-bar/* xinitrc install.sh README.md LICENSE"
+EXCLUDES="rcm/* config/dwm-bar/* xinitrc nvidia-settings-rc install.sh README.md LICENSE"
