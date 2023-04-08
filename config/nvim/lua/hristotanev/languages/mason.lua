@@ -13,7 +13,8 @@ mason_lsp.setup({
     'vimls',
     'lua_ls',
     'html',
-    'cssls'
+    'cssls',
+    'rust_analyzer'
   },
   automatic_installation = true
 })

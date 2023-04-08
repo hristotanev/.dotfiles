@@ -8,7 +8,8 @@ require('nvim-treesitter.configs').setup({
     'latex',
     'typescript',
     'html',
-    'css'
+    'css',
+    'rust'
   },
   auto_install = true,
   highlight = {

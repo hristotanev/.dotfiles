@@ -16,12 +16,12 @@ local multinput = ls.sn(1, {
 })
 
 local fileinput = ls.sn(1, {
-  ls.t("freopen(\"r\", \""),
+  ls.t("freopen(\""),
   ls.i(1),
-  ls.t({".in\", stdin);", ""}),
-  ls.t("\tfreopen(\"w\", \""),
+  ls.t({".in\", \"r\", stdin);", ""}),
+  ls.t("\tfreopen(\""),
   rep(1),
-  ls.t(".out\", stdout);")
+  ls.t(".out\", \"w\", tdout);")
 })
 
 return ls.s({ trig="init" }, fmt([[
