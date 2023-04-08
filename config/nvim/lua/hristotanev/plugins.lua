@@ -19,6 +19,7 @@ return require('packer').startup(function (use)
   -- Language specific
   use('williamboman/mason.nvim')
   use('williamboman/mason-lspconfig.nvim')
+  use('mhartington/formatter.nvim')
   use('lervag/vimtex')
   use('darrikonn/vim-gofmt', { run = ':GoUpdateBinaries' })
   use('L3MON4D3/LuaSnip', {tag = 'v<CurrentMajor>.*', run = 'make install_jsregexp'})
