@@ -4,6 +4,7 @@ vim.cmd[[
   colorscheme OceanicNext
   highlight WinSeparator guibg=None
 ]]
+vim.g.rust_recommended_style = 0
 vim.o.laststatus = 3
 vim.bo.tw = 120
 vim.wo.cursorline = true

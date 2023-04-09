@@ -9,7 +9,17 @@ require("formatter").setup({
       require("formatter.filetypes.go").goimports,
     },
     rust = {
-      require("formatter.filetypes.rust").rustfmt,
+      function ()
+        return {
+          exe = "rustfmt",
+          args = {
+            "--edition",
+            "2021",
+            "--config",
+            "tab_spaces=2"
+          }
+        }
+      end
     },
     any = {
       require("formatter.filetypes.any").remove_trailing_whitespace

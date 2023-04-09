@@ -6,4 +6,5 @@ require('hristotanev.settings')
 require('hristotanev.remaps')
 require('hristotanev.languages')
 require('hristotanev.misc')
+require('hristotanev.commands')
 
