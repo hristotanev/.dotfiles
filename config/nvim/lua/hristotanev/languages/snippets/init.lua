@@ -1,1 +1,1 @@
-require('hristotanev.languages.snippets.cpp')
+require("hristotanev.languages.snippets.cpp")
