@@ -48,7 +48,6 @@ return require("packer").startup(function(use)
 	use("tpope/vim-fugitive")
 	use("tpope/vim-surround")
 	use("gelguy/wilder.nvim")
-	use("ThePrimeagen/vim-be-good")
 	use("editorconfig/editorconfig-vim")
 	use({
 		"folke/twilight.nvim",
