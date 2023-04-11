@@ -19,12 +19,12 @@ Remember to back-up all the configuration you already have before running the in
 ## Installation
 To install and link all dotfiles with all the set up required simply run the following command in your terminal:
 
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/hristotanev/.dotfiles/main/install.sh)"`
+```shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/hristotanev/.dotfiles/main/install.sh)"
+```
 
 ## Remove dotfiles and other configuration
-In order to remove all dotfiles and configurations, run `rcdn && rm -rf .dotfiles` from your home directory.
-
-## Next steps
-- [ ] highlight and set-up dependencies inside the installer
-- [ ] think about config back-up automation before fresh install
-- [ ] set-up deploy pipeline and versioning convention to allow for automatic tagging with CircleCI
+In order to remove all dotfiles and configurations, run the following command from within your home directory:
+```shell
+rcdn && rm -rf .dotfiles
+```
