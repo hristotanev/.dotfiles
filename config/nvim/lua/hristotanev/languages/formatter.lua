@@ -11,6 +11,9 @@ require("formatter").setup({
 			require("formatter.filetypes.go").gofmt,
 			require("formatter.filetypes.go").goimports,
 		},
+		c = {
+			require("formatter.filetypes.c").clangformat,
+		},
 		rust = {
 			function()
 				return {

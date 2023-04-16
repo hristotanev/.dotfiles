@@ -17,9 +17,9 @@ local function expand_or_jump()
 	end
 end
 
-inoremap("<leader>e", expand_or_jump, { silent = true })
+inoremap("<leader><leader>e", expand_or_jump, { silent = true })
 inoremap("<C-j>", "<Plug>luasnip-next-choice")
 inoremap("<C-k>", "<Plug>luasnip-prev-choice")
-cnoremap("<leader>e", expand_or_jump, { silent = true })
+cnoremap("<leader><leader>e", expand_or_jump, { silent = true })
 cnoremap("<C-j>", "<Plug>luasnip-next-choice")
 cnoremap("<C-k>", "<Plug>luasnip-prev-choice")

@@ -13,6 +13,7 @@ local function on_attach()
 		nnoremap("<leader>dk", vim.diagnostic.goto_next, { buffer = 0 })
 		nnoremap("<leader>r", vim.lsp.buf.rename, { buffer = 0 })
 		nnoremap("<leader>b", ":Build<CR>", { silent = true, buffer = 0 })
+		nnoremap("<leader>rn", ":Run<CR>", { silent = true, buffer = 0 })
 	end
 end
 
