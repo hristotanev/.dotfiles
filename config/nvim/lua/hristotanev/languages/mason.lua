@@ -6,11 +6,13 @@ local mason_null_ls = require("mason-null-ls")
 
 mason_null_ls.setup({
 	ensure_installed = {
-		"stylua",
-		"rustfmt",
+		"clang-format",
 		"gofumpt",
 		"goimports",
-		"clang-format",
+		"latexindent",
+		"rustfmt",
+		"stylua",
+		"shfmt",
 	},
 	automatic_installation = true,
 })
@@ -18,15 +20,15 @@ mason_null_ls.setup({
 mason_lsp.setup({
 	ensure_installed = {
 		"clangd",
-		"gopls",
-		"tsserver",
-		"svelte",
-		"ltex",
-		"vimls",
-		"lua_ls",
-		"html",
 		"cssls",
+		"gopls",
+		"html",
+		"ltex",
+		"lua_ls",
 		"rust_analyzer",
+		"svelte",
+		"tsserver",
+		"vimls",
 	},
 	automatic_installation = true,
 })

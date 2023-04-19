@@ -4,14 +4,14 @@ local utils = require("hristotanev.common.utils")
 local exec_cmd_in_buf = utils.exec_cmd_in_buf
 local exec_cmd_in_term = utils.exec_cmd_in_term
 
-local function build(file_name_with_ext)
-	local _, _, file_name = string.find(file_name_with_ext, "(.*).c")
-	exec_cmd_in_buf({ "gcc", file_name_with_ext, "-o", file_name })
+local function build(file_name)
+	local command = { "gcc", file_name .. ".c", "-o", file_name }
+	exec_cmd_in_buf(command)
 end
 
-local function run(file_name_with_ext)
-	local _, _, file_name = string.find(file_name_with_ext, "(.*).c")
-	exec_cmd_in_term({ "gcc", file_name_with_ext, "-o", file_name, "&&", "./" .. file_name })
+local function run(file_name)
+	local command = { "gcc", file_name .. ".c", "-o", file_name, "&&", "./" .. file_name }
+	exec_cmd_in_term(command)
 end
 
 M.build = build

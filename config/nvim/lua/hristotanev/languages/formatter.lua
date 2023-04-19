@@ -1,18 +1,25 @@
 local api = vim.api
+local filetypes = require("formatter.filetypes")
 
 require("formatter").setup({
 	logging = true,
 	log_level = vim.log.levels.WARN,
 	filetype = {
-		lua = {
-			require("formatter.filetypes.lua").stylua,
-		},
-		go = {
-			require("formatter.filetypes.go").gofmt,
-			require("formatter.filetypes.go").goimports,
+		any = {
+			filetypes.any.remove_trailing_whitespace,
 		},
 		c = {
-			require("formatter.filetypes.c").clangformat,
+			filetypes.c.clangformat,
+		},
+		go = {
+			filetypes.go.gofmt,
+			filetypes.go.goimports,
+		},
+		latex = {
+			filetypes.latex.latexindent,
+		},
+		lua = {
+			filetypes.lua.stylua,
 		},
 		rust = {
 			function()
@@ -27,8 +34,8 @@ require("formatter").setup({
 				}
 			end,
 		},
-		any = {
-			require("formatter.filetypes.any").remove_trailing_whitespace,
+		sh = {
+			filetypes.sh.shfmt,
 		},
 	},
 })
