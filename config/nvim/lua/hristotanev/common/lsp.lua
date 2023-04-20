@@ -1,4 +1,5 @@
 local M = {}
+local nnoremap = require("hristotanev.common.keymaps").nnoremap
 
 local function capabilities()
 	local caps = vim.lsp.protocol.make_client_capabilities()
@@ -6,8 +7,6 @@ local function capabilities()
 end
 
 local function on_attach()
-	local nnoremap = require("hristotanev.common.keymaps").nnoremap
-
 	return function()
 		nnoremap("<leader>dj", vim.diagnostic.goto_prev, { buffer = 0 })
 		nnoremap("<leader>dk", vim.diagnostic.goto_next, { buffer = 0 })

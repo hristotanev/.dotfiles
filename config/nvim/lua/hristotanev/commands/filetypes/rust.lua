@@ -12,7 +12,13 @@ local function run()
 	exec_cmd_in_term({ "cargo", "run" })
 end
 
+local function explain_error()
+	local error_code = vim.fn.input("Rust error code: ")
+	exec_cmd_in_buf({ "rustc", "--explain", error_code })
+end
+
 M.build = build
 M.run = run
+M.explain_error = explain_error
 
 return M

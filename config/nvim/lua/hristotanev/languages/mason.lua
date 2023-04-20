@@ -53,4 +53,19 @@ mason_lsp.setup_handlers({
 			},
 		})
 	end,
+	["rust_analyzer"] = function()
+		require("lspconfig").rust_analyzer.setup({
+			capabilities = lsp.capabilities,
+			on_attach = function()
+				lsp.on_attach()
+
+				local nnoremap = require("hristotanev.common.keymaps").nnoremap
+				local rust_cmds = require("hristotanev.commands.filetypes.rust")
+
+				nnoremap("<leader>zz", function()
+					rust_cmds.explain_error()
+				end, { silent = true, buffer = 0 })
+			end,
+		})
+	end,
 })

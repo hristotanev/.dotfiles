@@ -2,28 +2,30 @@ local C = {}
 local clang_cmds = require("hristotanev.commands.filetypes.c")
 local rust_cmds = require("hristotanev.commands.filetypes.rust")
 
-local function build(file_name, ext)
-	if ext == "rs" then
-		rust_cmds.build()
-		return
-	end
-
-	if ext == "c" then
+local buildTable = {
+	["c"] = function(file_name)
 		clang_cmds.build(file_name)
-		return
-	end
+	end,
+	["rs"] = function(file_name)
+		rust_cmds.build()
+	end,
+}
+
+local function build(file_name, ext)
+	buildTable[ext](file_name)
 end
 
-local function run(file_name, ext)
-	if ext == "rs" then
-		rust_cmds.run()
-		return
-	end
-
-	if ext == "c" then
+local runTable = {
+	["c"] = function(file_name)
 		clang_cmds.run(file_name)
-		return
-	end
+	end,
+	["rs"] = function(file_name)
+		rust_cmds.run()
+	end,
+}
+
+local function run(file_name, ext)
+	runTable[ext](file_name)
 end
 
 C.build = build
