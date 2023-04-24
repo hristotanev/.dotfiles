@@ -67,4 +67,6 @@ return require("packer").startup(function(use)
 	use("nvim-treesitter/playground")
 	use("nvim-tree/nvim-tree.lua")
 	use("nvim-tree/nvim-web-devicons")
+
+	use("~/plugins/argdef.nvim")
 end)
