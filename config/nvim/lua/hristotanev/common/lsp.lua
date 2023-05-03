@@ -8,11 +8,24 @@ end
 
 local function on_attach()
 	return function()
+		nnoremap("<leader>i", vim.lsp.buf.hover, { buffer = 0 })
 		nnoremap("<leader>dj", vim.diagnostic.goto_prev, { buffer = 0 })
 		nnoremap("<leader>dk", vim.diagnostic.goto_next, { buffer = 0 })
 		nnoremap("<leader>r", vim.lsp.buf.rename, { buffer = 0 })
 		nnoremap("<leader>b", ":Build<CR>", { silent = true, buffer = 0 })
 		nnoremap("<leader>rn", ":Run<CR>", { silent = true, buffer = 0 })
+		nnoremap("<leader>id", function()
+			local opts = {
+				focusable = false,
+				close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+				border = "rounded",
+				source = "always",
+				prefix = " ",
+				scope = "cursor",
+			}
+
+			vim.diagnostic.open_float(nil, opts)
+		end, { silent = true, buffer = 0 })
 	end
 end
 

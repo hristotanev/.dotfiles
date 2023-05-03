@@ -27,3 +27,4 @@ nnoremap("<leader>gc", "<cmd>lua require('telescope.builtin').git_commits()<CR>"
 nnoremap("<leader>hi", "<cmd>lua require('telescope.builtin').command_history()<CR>")
 nnoremap("<leader><leader>df", "<cmd>lua require('telescope.builtin').lsp_definitions()<CR>")
 nnoremap("<leader><leader>rf", "<cmd>lua require('telescope.builtin').lsp_references()<CR>")
+nnoremap("<leader>ht", "<cmd>lua require('telescope.builtin').help_tags()<CR>")
