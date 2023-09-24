@@ -3,7 +3,7 @@
 password=$(
 	find .password-store -type f -name "*.gpg" |
 	sed -E 's/.password-store\/(.*).gpg/\1/g' |
-	dmenu -c -i -l 10
+	fzf --height 10
 )
 
 if [[ $(echo $password | grep -o -w "otp") == '' ]]; then
