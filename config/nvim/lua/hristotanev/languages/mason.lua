@@ -9,8 +9,9 @@ mason_null_ls.setup({
 		"clang-format",
 		"gofumpt",
 		"goimports",
+		"htmlbeautifier",
 		"latexindent",
-		"rustfmt",
+		"prettier",
 		"stylua",
 		"shfmt",
 	},
@@ -21,6 +22,7 @@ mason_lsp.setup({
 	ensure_installed = {
 		"clangd",
 		"cssls",
+		"dockerls",
 		"gopls",
 		"html",
 		"ltex",

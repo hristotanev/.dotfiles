@@ -15,6 +15,25 @@ require("formatter").setup({
 			filetypes.go.gofmt,
 			filetypes.go.goimports,
 		},
+		html = {
+			function()
+				return {
+					exe = "htmlbeautifier",
+				}
+			end,
+		},
+		javascript = {
+			filetypes.javascript.prettier,
+		},
+		javascriptreact = {
+			filetypes.javascriptreact.prettier,
+		},
+		typescript = {
+			filetypes.typescript.prettier,
+		},
+		typescriptreact = {
+			filetypes.typescriptreact.prettier,
+		},
 		latex = {
 			filetypes.latex.latexindent,
 		},
