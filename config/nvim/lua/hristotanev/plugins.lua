@@ -39,7 +39,6 @@ return require("packer").startup(function(use)
 	})
 
 	-- Misc
-	use("github/copilot.vim")
 	use("fedepujol/move.nvim")
 	use("vimwiki/vimwiki")
 	use("mbbill/undotree")
