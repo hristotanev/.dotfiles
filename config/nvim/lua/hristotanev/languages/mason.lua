@@ -25,6 +25,7 @@ mason_lsp.setup({
 		"dockerls",
 		"gopls",
 		"html",
+		"jdtls",
 		"ltex",
 		"lua_ls",
 		"rust_analyzer",

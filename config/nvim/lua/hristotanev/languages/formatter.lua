@@ -22,6 +22,9 @@ require("formatter").setup({
 				}
 			end,
 		},
+		java = {
+			filetypes.java.clangformat,
+		},
 		javascript = {
 			filetypes.javascript.prettier,
 		},

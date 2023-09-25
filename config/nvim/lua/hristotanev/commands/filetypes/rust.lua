@@ -1,4 +1,4 @@
-local M = {}
+local C = {}
 local utils = require("hristotanev.common.utils")
 
 local exec_cmd_in_term = utils.exec_cmd_in_term
@@ -17,8 +17,8 @@ local function explain_error()
 	vim.cmd("!" .. vim.fn.join(command, " "))
 end
 
-M.build = build
-M.run = run
-M.explain_error = explain_error
+C.build = build
+C.run = run
+C.explain_error = explain_error
 
-return M
+return C
