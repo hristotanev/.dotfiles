@@ -1,5 +1,9 @@
 local ls = require("luasnip")
 
+ls.add_snippets("c", {
+	require("hristotanev.languages.snippets.c.init_snip"),
+})
+
 ls.add_snippets("cpp", {
 	require("hristotanev.languages.snippets.cpp.init_snip"),
 })

@@ -2,7 +2,7 @@
 # /home/hristo/.nvidia-settings-rc
 #
 # Configuration file for nvidia-settings - the NVIDIA Settings utility
-# Generated on Sat Jun 11 16:32:49 2022
+# Generated on Wed Oct 18 21:40:53 2023
 #
 
 # ConfigProperties:
@@ -12,9 +12,9 @@ DisplayStatusBar = Yes
 SliderTextEntries = Yes
 IncludeDisplayNameInConfigFile = Yes
 UpdateRulesOnProfileNameChange = Yes
-Timer = Memory_Used_(GPU_0),Yes,3000
-Timer = Thermal_Monitor_(GPU_0),Yes,1000
 Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
+Timer = Thermal_Monitor_(GPU_0),Yes,1000
+Timer = Memory_Used_(GPU_0),Yes,3000
 
 # Attributes:
 
@@ -85,3 +85,4 @@ arch:0[DPY:DP-3]/DitheringDepth=0
 arch:0[DPY:DP-3]/ColorSpace=0
 arch:0[DPY:DP-3]/ColorRange=0
 arch:0[DPY:DP-3]/SynchronousPaletteUpdates=0
+[GPU:0]/GPUPowerMizerMode=2

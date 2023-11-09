@@ -31,6 +31,9 @@ require("formatter").setup({
 		javascriptreact = {
 			filetypes.javascriptreact.prettier,
 		},
+		python = {
+			filetypes.python.yapf,
+		},
 		typescript = {
 			filetypes.typescript.prettier,
 		},

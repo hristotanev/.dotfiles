@@ -14,6 +14,7 @@ mason_null_ls.setup({
 		"prettier",
 		"stylua",
 		"shfmt",
+		"yapf",
 	},
 	automatic_installation = true,
 })
@@ -28,6 +29,7 @@ mason_lsp.setup({
 		"jdtls",
 		"ltex",
 		"lua_ls",
+		"pylyzer",
 		"rust_analyzer",
 		"svelte",
 		"tsserver",
