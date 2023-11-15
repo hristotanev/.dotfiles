@@ -5,6 +5,7 @@ local function exercism_download()
 	local track = vim.fn.input("Enter track: ")
 	local exercise = vim.fn.input("Enter exercise: ")
 
+	utils.nuke()
 	vim.cmd("!" .. vim.fn.join({ "exercism download", "-t", track, "-e", exercise }, " "))
 	vim.cmd("cd $HOME/exercism/" .. track .. "/" .. exercise)
 	vim.defer_fn(function()

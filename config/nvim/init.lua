@@ -1,1 +1,1 @@
-require('hristotanev')
+require("hristotanev")

@@ -1,6 +1,11 @@
 local M = {}
 local api = vim.api
 
+local function nuke()
+	vim.cmd("bufdo :bw")
+	require("nvim-tree").purge_all_state()
+end
+
 local function close_other_windows(current_window)
 	local windows = api.nvim_tabpage_list_wins(0)
 	for _, window in ipairs(windows) do
@@ -20,6 +25,7 @@ local function exec_cmd_in_term(command)
 	api.nvim_win_set_cursor(current_window, current_cursor_pos)
 end
 
+M.nuke = nuke
 M.exec_cmd_in_term = exec_cmd_in_term
 
 return M

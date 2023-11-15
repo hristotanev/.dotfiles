@@ -7,8 +7,6 @@ local mason_null_ls = require("mason-null-ls")
 mason_null_ls.setup({
 	ensure_installed = {
 		"clang-format",
-		"gofumpt",
-		"goimports",
 		"htmlbeautifier",
 		"latexindent",
 		"prettier",
@@ -24,7 +22,6 @@ mason_lsp.setup({
 		"clangd",
 		"cssls",
 		"dockerls",
-		"gopls",
 		"html",
 		"jdtls",
 		"ltex",

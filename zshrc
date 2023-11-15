@@ -9,7 +9,7 @@ export EDITOR="nvim"
 export TERM="xterm-256color"
 export ZSH=~/.oh-my-zsh
 export FZF_BASE=/usr/bin/fzf
-export PATH=$PATH:$(go env GOPATH)/bin/:/usr/local/bin/
+export PATH=$PATH:/usr/local/bin/
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
@@ -19,9 +19,7 @@ plugins=(
 	fzf 
 	zsh-syntax-highlighting 
 	zsh-autosuggestions 
-  archlinux
   magic-enter
-  tmux
 )
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -35,8 +33,6 @@ alias pd='~/.config/scripts/dmenu_pass.sh'
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
-
-source <(kubectl completion zsh)
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
