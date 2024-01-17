@@ -31,6 +31,7 @@ return require("packer").startup(function(use)
 	})
 
 	-- Misc
+	use("folke/zen-mode.nvim")
 	use("fedepujol/move.nvim")
 	use("vimwiki/vimwiki")
 	use("mbbill/undotree")

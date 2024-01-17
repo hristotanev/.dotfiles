@@ -1,30 +1,14 @@
 local C = {}
 local clang_cmds = require("hristotanev.commands.filetypes.c")
-local java_cmds = require("hristotanev.commands.filetypes.java")
 local rust_cmds = require("hristotanev.commands.filetypes.rust")
-
-local buildTable = {
-	["c"] = function(file_name)
-		clang_cmds.build(file_name)
-	end,
-	["java"] = function(file_name)
-		java_cmds.build(file_name)
-	end,
-	["rs"] = function(file_name)
-		rust_cmds.build()
-	end,
-}
-
-local function build(file_name, ext)
-	buildTable[ext](file_name)
-end
+local haskell_cmds = require("hristotanev.commands.filetypes.haskell")
 
 local runTable = {
 	["c"] = function(file_name)
 		clang_cmds.run(file_name)
 	end,
-	["java"] = function(file_name)
-		java_cmds.run(file_name)
+	["hs"] = function(file_name)
+		haskell_cmds.run(file_name)
 	end,
 	["rs"] = function(file_name)
 		rust_cmds.run()
@@ -35,7 +19,6 @@ local function run(file_name, ext)
 	runTable[ext](file_name)
 end
 
-C.build = build
 C.run = run
 
 return C

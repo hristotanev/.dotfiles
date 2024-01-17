@@ -9,7 +9,7 @@ export EDITOR="nvim"
 export TERM="xterm-256color"
 export ZSH=~/.oh-my-zsh
 export FZF_BASE=/usr/bin/fzf
-export PATH=$PATH:/usr/local/bin/
+export PATH=$PATH:/usr/local/bin/:/snap/bin/
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
@@ -20,6 +20,7 @@ plugins=(
 	zsh-syntax-highlighting 
 	zsh-autosuggestions 
   magic-enter
+  tmux
 )
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -47,3 +48,5 @@ esac
 # pnpm end
 
 export PATH="$PATH:$HOME/.sdkman/candidates/gradle/current/bin/gradle"
+
+[ -f "/home/hristo/.ghcup/env" ] && source "/home/hristo/.ghcup/env" # ghcup-env

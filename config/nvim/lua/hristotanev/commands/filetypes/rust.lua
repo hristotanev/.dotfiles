@@ -3,10 +3,6 @@ local utils = require("hristotanev.common.utils")
 
 local exec_cmd_in_term = utils.exec_cmd_in_term
 
-local function build()
-	vim.cmd("!cargo build")
-end
-
 local function run()
 	exec_cmd_in_term({ "cargo", "run" })
 end
@@ -17,7 +13,6 @@ local function explain_error()
 	vim.cmd("!" .. vim.fn.join(command, " "))
 end
 
-C.build = build
 C.run = run
 C.explain_error = explain_error
 

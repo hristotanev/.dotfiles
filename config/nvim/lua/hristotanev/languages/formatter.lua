@@ -22,23 +22,14 @@ require("formatter").setup({
 				}
 			end,
 		},
+		haskell = {
+			filetypes.haskell.stylish_haskell,
+		},
 		java = {
 			filetypes.java.clangformat,
 		},
-		javascript = {
-			filetypes.javascript.prettier,
-		},
-		javascriptreact = {
-			filetypes.javascriptreact.prettier,
-		},
 		python = {
 			filetypes.python.yapf,
-		},
-		typescript = {
-			filetypes.typescript.prettier,
-		},
-		typescriptreact = {
-			filetypes.typescriptreact.prettier,
 		},
 		latex = {
 			filetypes.latex.latexindent,

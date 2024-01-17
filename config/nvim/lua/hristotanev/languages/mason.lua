@@ -7,9 +7,7 @@ local mason_null_ls = require("mason-null-ls")
 mason_null_ls.setup({
 	ensure_installed = {
 		"clang-format",
-		"htmlbeautifier",
 		"latexindent",
-		"prettier",
 		"stylua",
 		"shfmt",
 		"yapf",
@@ -19,17 +17,17 @@ mason_null_ls.setup({
 
 mason_lsp.setup({
 	ensure_installed = {
+		"bashls",
 		"clangd",
-		"cssls",
 		"dockerls",
 		"html",
-		"jdtls",
+		"hls",
 		"ltex",
 		"lua_ls",
 		"pylyzer",
 		"rust_analyzer",
 		"svelte",
-		"tsserver",
+		"sqlls",
 		"vimls",
 	},
 	automatic_installation = true,
@@ -62,10 +60,10 @@ mason_lsp.setup_handlers({
 				lsp.on_attach()
 
 				local nnoremap = require("hristotanev.common.keymaps").nnoremap
-				local rust_cmds = require("hristotanev.commands.filetypes.rust")
+				local cmds = require("hristotanev.commands.filetypes.rust")
 
 				nnoremap("<leader>zz", function()
-					rust_cmds.explain_error()
+					cmds.explain_error()
 				end, { silent = true, buffer = 0 })
 			end,
 		})
